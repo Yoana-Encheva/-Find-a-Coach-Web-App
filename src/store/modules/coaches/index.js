@@ -7,7 +7,7 @@ export default {
   state() {
     return {
       coaches: [
-  {
+        {
     id: 'c1',
     firstName: 'Maximilian',
     lastName: 'Schwarzmüller',

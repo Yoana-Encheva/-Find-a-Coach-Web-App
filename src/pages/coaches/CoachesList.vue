@@ -3,9 +3,10 @@
         FILTER
     </section>
     <section>
+        <base-card>
         <div class="controls">
-            <button>Refresh</button>
-            <router-link to="/register">Register as Coach</router-link>
+            <base-button mode="outline">Refresh</base-button>
+            <base-button link to="/register">Register as Coach</base-button>
         </div>
         <ul v-if="hasCoaches">
             <coach-item v-for="coach in filteredCoaches" 
@@ -17,6 +18,7 @@
             :areas="coach.areas"></coach-item>
         </ul>
         <h3 v-else>No coaches found.</h3>
+        </base-card>
     </section>
 </template>
 
