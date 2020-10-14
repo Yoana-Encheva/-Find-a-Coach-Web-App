@@ -14,7 +14,8 @@ const router = createRouter({
       { path: '/coaches', component: CoachesList },
       {
     //   name: 'coaches',
-      path: '/coaches/:id',
+        path: '/coaches/:id',
+        props:true,
     //   meta: { needsAuth: true },
       component: CoachDetail ,
       children: [
