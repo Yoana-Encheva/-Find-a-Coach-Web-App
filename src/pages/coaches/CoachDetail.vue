@@ -1,5 +1,6 @@
 <template>
-    <section>
+   <div>
+        <section>
         <base-card>
         <h2>{{ fullName }}</h2>
         <h3>${{ hourlyRate }}/hour</h3>
@@ -22,6 +23,7 @@
         <p>{{ description }}</p>
         </base-card>
     </section>
+   </div>
 </template>
 
 <script>
