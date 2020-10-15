@@ -5,7 +5,15 @@ module.exports = {
   },
   'extends': [
     'plugin:vue/vue3-essential',
-    'eslint:recommended'
+    'eslint:recommended',
+    'prettier',
+    "prettier/@typescript-eslint",
+    "prettier/babel",
+    "prettier/flowtype",
+    "prettier/react",
+    "prettier/standard",
+    "prettier/unicorn",
+    "prettier/vue"
   ],
   parserOptions: {
     parser: 'babel-eslint'
