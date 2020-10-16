@@ -8,9 +8,11 @@ export default {
             description: data.desc,
             hourlyRate: data.rate,
             areas: data.areas
-        };
+    };
+    
+    const token = context.rootGetters.token;
 
-        const response = await fetch(`https://fir-1b176.firebaseio.com/coaches/${userId}.json`, {
+        const response = await fetch(`https://fir-1b176.firebaseio.com/coaches/${userId}.json?auth=` + token, {
             method: 'PUT',
             body: JSON.stringify(coachData)
         });
